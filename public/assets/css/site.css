@@ -8,6 +8,7 @@
   --accent: #0f6b63;
   --accent-dark: #09453f;
   --warm: #c04f2f;
+  --blue: #254c7c;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -34,6 +35,7 @@ a {
   padding: 18px clamp(18px, 4vw, 48px);
   border-bottom: 1px solid var(--line);
   background: rgba(251, 250, 247, 0.92);
+  backdrop-filter: blur(10px);
 }
 
 .brand {
@@ -44,6 +46,7 @@ a {
 
 .site-header nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   font-size: 0.95rem;
 }
@@ -56,6 +59,10 @@ a {
 main {
   width: min(1120px, calc(100% - 36px));
   margin: 0 auto;
+}
+
+.personal-home main {
+  width: min(1180px, calc(100% - 36px));
 }
 
 .intro,
@@ -83,6 +90,12 @@ h1 {
   line-height: 1.03;
 }
 
+h2 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.12;
+}
+
 .intro p:not(.eyebrow),
 .page-heading p:not(.eyebrow) {
   max-width: 680px;
@@ -93,6 +106,7 @@ h1 {
 .button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 44px;
   padding: 0 18px;
   border-radius: 6px;
@@ -100,6 +114,147 @@ h1 {
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
+}
+
+.button-secondary {
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--accent-dark);
+}
+
+.personal-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
+  align-items: center;
+  gap: clamp(28px, 6vw, 78px);
+  min-height: calc(100vh - 82px);
+  padding: clamp(42px, 7vw, 86px) 0;
+}
+
+.personal-hero__copy {
+  max-width: 680px;
+}
+
+.lede {
+  max-width: 640px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 2vw, 1.32rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.portrait-panel {
+  position: relative;
+  margin: 0;
+}
+
+.portrait-panel::before {
+  position: absolute;
+  inset: 18px -18px -18px 18px;
+  z-index: -1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f0ece4;
+  content: "";
+}
+
+.portrait-panel img {
+  display: block;
+  width: 100%;
+  max-height: 580px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(36, 36, 36, 0.16);
+}
+
+.portrait-panel figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.section-band {
+  padding: clamp(42px, 7vw, 72px) 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.feature-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 190px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.feature-link:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.feature-link span {
+  color: var(--blue);
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.feature-link p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.compact-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.text-link {
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 24px 0 36px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 .filters {
@@ -183,6 +338,28 @@ h1 {
     flex-direction: column;
   }
 
+  .site-header nav {
+    gap: 10px 14px;
+  }
+
+  .personal-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .portrait-panel {
+    max-width: 360px;
+  }
+
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-band {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .filters {
     align-items: flex-start;
     flex-direction: column;
@@ -190,5 +367,20 @@ h1 {
 
   .filters select {
     width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .personal-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .portrait-panel {
+    max-width: 420px;
+  }
+
+  .link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
