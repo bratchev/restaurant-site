@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New and Upcoming Restaurants</title>
+    <link rel="stylesheet" href="assets/css/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Website Draft</a>
+      <nav aria-label="Main navigation">
+        <a href="restaurants.html" aria-current="page">Restaurant Updates</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <p class="eyebrow">Published restaurant news</p>
+        <h1>New and upcoming restaurants by city</h1>
+        <p>
+          Track openings, announced projects, and notable expansions from linked
+          public sources.
+        </p>
+      </section>
+
+      <section class="filters" aria-label="Restaurant filters">
+        <label for="city-filter">City</label>
+        <select id="city-filter">
+          <option value="all">All cities</option>
+        </select>
+      </section>
+
+      <section id="restaurant-list" class="restaurant-grid" aria-live="polite">
+        <p>Loading restaurant updates...</p>
+      </section>
+    </main>
+
+    <script src="assets/js/restaurants.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Sample Opening",
+    "city": "New York",
+    "status": "Announced",
+    "expectedDate": "2026-08-01",
+    "publishedDate": "2026-05-20",
+    "summary": "Replace this sample with an original summary based on a linked public article about an upcoming restaurant.",
+    "sourceName": "Example Publication",
+    "sourceUrl": "https://example.com/"
+  },
+  {
+    "name": "Sample Expansion",
+    "city": "Chicago",
+    "status": "Coming soon",
+    "expectedDate": "2026-09-15",
+    "publishedDate": "2026-05-18",
+    "summary": "Use this format for sourced updates, including a clear city, status, expected date, source name, and source URL.",
+    "sourceName": "Example Publication",
+    "sourceUrl": "https://example.com/"
+  },
+  {
+    "name": "Sample Soft Opening",
+    "city": "Los Angeles",
+    "status": "Soft opening",
+    "expectedDate": "2026-06-20",
+    "publishedDate": "2026-05-12",
+    "summary": "The page can show manually curated updates first, then later be fed by RSS or another automated collection script.",
+    "sourceName": "Example Publication",
+    "sourceUrl": "https://example.com/"
+  }
+]
