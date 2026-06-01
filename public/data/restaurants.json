@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-01",
-  "cities": ["San Francisco", "Vienna"],
+  "cities": ["San Francisco", "Vienna", "Munich"],
   "items": [
     {
       "name": "Lobalita",
@@ -85,6 +85,54 @@
       "whyItMatters": "Expansion into a larger space can be a useful casual-dining momentum signal, especially when local coverage expects immediate interest.",
       "sourceName": "Vienna Wurstelstand",
       "sourceUrl": "https://viennawurstelstand.com/location/hefenbrueder-new-in-vienna/"
+    },
+    {
+      "name": "Fogosch",
+      "city": "Munich",
+      "neighborhood": "Maxvorstadt",
+      "signal": "New opening",
+      "signalStrength": 4,
+      "signalDate": "2026-05-06",
+      "summary": "Falstaff reports that Michelin-starred chef Jürgen Wolfsgruber opened a focused fish bistro on Amalienstrasse in May 2026.",
+      "whyItMatters": "A new, stripped-down concept from a Michelin-recognized operator, with high-end kitchen and service talent attached, is a strong Munich momentum signal.",
+      "sourceName": "Falstaff",
+      "sourceUrl": "https://www.falstaff.com/en/news/new-fish-bistro-for-munich-juergen-wolfsgruber-opens-fogosch"
+    },
+    {
+      "name": "Casele",
+      "city": "Munich",
+      "neighborhood": "Glockenbach",
+      "signal": "New opening",
+      "signalStrength": 3,
+      "signalDate": "2026-05-26",
+      "summary": "Falstaff describes Casele as a new Naples-meets-Munich restaurant in a former butcher shop, led by sommelier Raffaele Colonna.",
+      "whyItMatters": "A distinctive concept, direct product sourcing, and design-led reuse of a neighborhood space make this more interesting than a standard Italian opening.",
+      "sourceName": "Falstaff",
+      "sourceUrl": "https://www.falstaff.com/en/news/munich-meets-naples-the-casele-brings-italian-flair-to-the-glockenbach-district"
+    },
+    {
+      "name": "Raya",
+      "city": "Munich",
+      "neighborhood": "Stachus",
+      "signal": "New opening",
+      "signalStrength": 4,
+      "signalDate": "2026-05-04",
+      "summary": "tz reports that Raya opened at the Koenigshof with high-end Asian dining, international sushi chefs, strong early reservation demand, and Michelin ambitions.",
+      "whyItMatters": "A chef-backed opening with immediate demand and explicit star ambitions is exactly the kind of early upward trajectory worth watching.",
+      "sourceName": "tz München",
+      "sourceUrl": "https://www.tz.de/muenchen/stadt/neues-restaurant-in-muenchen-wir-haben-ueber-500-anfragen-94289214.html"
+    },
+    {
+      "name": "Tohru in der Schreiberei",
+      "city": "Munich",
+      "neighborhood": "Altstadt",
+      "signal": "Michelin promotion",
+      "signalStrength": 5,
+      "signalDate": "2025-06-18",
+      "summary": "Michelin Germany 2025 promoted Tohru in der Schreiberei from two to three stars, putting Munich at the top of Germany's fine-dining scene.",
+      "whyItMatters": "A promotion to three stars is a rare public acceleration signal, not just legacy praise.",
+      "sourceName": "MICHELIN Guide Germany",
+      "sourceUrl": "https://guide.michelin.com/en/article/michelin-guide-ceremony/the-michelin-guide-germany-2025-is-out"
     }
   ],
   "sources": [
@@ -123,6 +171,24 @@
       "name": "Vienna Wurstelstand",
       "use": "Local openings and informal city food-scene coverage.",
       "url": "https://viennawurstelstand.com"
+    },
+    {
+      "city": "Munich",
+      "name": "Falstaff Munich",
+      "use": "New openings, chef moves, and German/Austrian restaurant news.",
+      "url": "https://www.falstaff.com/en"
+    },
+    {
+      "city": "Munich",
+      "name": "MICHELIN Guide Germany",
+      "use": "Official star promotions, new stars, and guide recognition.",
+      "url": "https://guide.michelin.com/en/restaurants"
+    },
+    {
+      "city": "Munich",
+      "name": "in-muenchen and local press",
+      "use": "Local openings, guide summaries, and Munich-specific dining news.",
+      "url": "https://www.in-muenchen.de/gastro"
     }
   ]
 }

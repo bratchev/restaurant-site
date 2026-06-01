@@ -32,7 +32,7 @@ The restaurant page should be driven by published sources rather than copied art
 
 Current first version:
 
-- Track only San Francisco and Vienna.
+- Track only San Francisco, Vienna, and Munich.
 - Store items in `public/data/restaurants.json`.
 - Show each item with restaurant name, city, neighborhood, signal type, signal date, source name, source URL, and short original notes.
 - Treat new openings, new Michelin recognition, chef-led moves, and pop-up-to-permanent moves as strong signals.
