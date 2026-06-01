@@ -127,8 +127,8 @@ h2 {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
   align-items: center;
   gap: clamp(28px, 6vw, 78px);
-  min-height: calc(100vh - 82px);
-  padding: clamp(42px, 7vw, 86px) 0;
+  min-height: 560px;
+  padding: clamp(36px, 6vw, 70px) 0;
 }
 
 .personal-hero__copy {
@@ -150,37 +150,32 @@ h2 {
 }
 
 .portrait-panel {
-  position: relative;
+  overflow: hidden;
   margin: 0;
-}
-
-.portrait-panel::before {
-  position: absolute;
-  inset: 18px -18px -18px 18px;
-  z-index: -1;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #f0ece4;
-  content: "";
+  box-shadow: 0 24px 70px rgba(36, 36, 36, 0.14);
 }
 
 .portrait-panel img {
   display: block;
   width: 100%;
+  height: auto;
   max-height: 580px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 24px 70px rgba(36, 36, 36, 0.16);
+  object-fit: contain;
+  background: #ffffff;
 }
 
 .portrait-panel figcaption {
-  margin-top: 12px;
+  margin: 0;
+  padding: 12px 14px 14px;
   color: var(--muted);
   font-size: 0.92rem;
 }
 
 .section-band {
-  padding: clamp(42px, 7vw, 72px) 0;
+  padding: clamp(34px, 6vw, 58px) 0;
   border-top: 1px solid var(--line);
 }
 
