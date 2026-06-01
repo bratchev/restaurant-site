@@ -30,11 +30,13 @@ After editing locally, upload the contents of `public/` to the web root on pair.
 
 The restaurant page should be driven by published sources rather than copied article text.
 
-Recommended first version:
+Current first version:
 
-- Keep a curated list of sources per city.
+- Track only San Francisco and Vienna.
 - Store items in `public/data/restaurants.json`.
-- Show each item with restaurant name, city, status, expected opening date when known, a short original summary, source name, source URL, and publish date.
+- Show each item with restaurant name, city, neighborhood, signal type, signal date, source name, source URL, and short original notes.
+- Treat new openings, new Michelin recognition, chef-led moves, and pop-up-to-permanent moves as strong signals.
+- Treat Tripadvisor-style popularity as a weak signal because it tends to reward already-visible places.
 - Refresh the JSON manually at first.
 
 Later automation options:

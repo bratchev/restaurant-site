@@ -3,38 +3,83 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>New and Upcoming Restaurants</title>
+    <meta
+      name="description"
+      content="Restaurants with recent momentum in San Francisco and Vienna, based on openings, Michelin changes, and local food coverage."
+    >
+    <title>Rising Restaurants</title>
     <link rel="stylesheet" href="assets/css/site.css">
   </head>
-  <body>
+  <body class="restaurant-page">
     <header class="site-header">
-      <a class="brand" href="index.html">Website Draft</a>
+      <a class="brand" href="index.html">Boris Ratchev</a>
       <nav aria-label="Main navigation">
-        <a href="restaurants.html" aria-current="page">Restaurant Updates</a>
+        <a href="ourphotos/index.html">Photos</a>
+        <a href="professional.html">Professional</a>
+        <a href="restaurants.html" aria-current="page">Restaurants</a>
+        <a href="bookmarks.html">Bookmarks</a>
       </nav>
     </header>
 
     <main>
       <section class="page-heading">
-        <p class="eyebrow">Published restaurant news</p>
-        <h1>New and upcoming restaurants by city</h1>
+        <p class="eyebrow">Openings, awards, and momentum</p>
+        <h1>Rising restaurants in San Francisco and Vienna</h1>
         <p>
-          Track openings, announced projects, and notable expansions from linked
-          public sources.
+          A watchlist for places that appear to be moving upward, based on
+          published signals like new openings, Michelin recognition, local
+          critic attention, and notable chef or concept changes.
+        </p>
+      </section>
+
+      <section class="method-panel" aria-labelledby="method-title">
+        <div>
+          <p class="eyebrow">Method</p>
+          <h2 id="method-title">Not a best-of list</h2>
+        </div>
+        <p>
+          The goal is to catch restaurants on the way up, before they become
+          obvious consensus picks. Tripadvisor-style popularity is treated as a
+          weak signal because it often favors places that are already broad,
+          tourist-visible, or long established.
         </p>
       </section>
 
       <section class="filters" aria-label="Restaurant filters">
-        <label for="city-filter">City</label>
-        <select id="city-filter">
-          <option value="all">All cities</option>
-        </select>
+        <div class="filter-control">
+          <label for="city-filter">City</label>
+          <select id="city-filter">
+            <option value="all">All cities</option>
+          </select>
+        </div>
+
+        <div class="filter-control">
+          <label for="signal-filter">Signal</label>
+          <select id="signal-filter">
+            <option value="all">All signals</option>
+          </select>
+        </div>
       </section>
 
       <section id="restaurant-list" class="restaurant-grid" aria-live="polite">
         <p>Loading restaurant updates...</p>
       </section>
+
+      <section class="source-watch" aria-labelledby="source-watch-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Source watch</p>
+            <h2 id="source-watch-title">Where updates should come from</h2>
+          </div>
+        </div>
+        <div id="source-list" class="source-grid"></div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>Restaurant notes are sourced summaries, not copied reviews.</p>
+      <p><a href="index.html">Back to home</a></p>
+    </footer>
 
     <script src="assets/js/restaurants.js"></script>
   </body>
