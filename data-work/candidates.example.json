@@ -7,7 +7,13 @@
       "city": "Munich",
       "name": "Falstaff Munich",
       "url": "https://www.falstaff.com/en",
-      "reason": "Manual review source; automated fetch is skipped."
+      "reason": "Manual review source; automated fetch is skipped.",
+      "searches": [
+        {
+          "query": "site:falstaff.com/en/news Munich restaurant opening Falstaff",
+          "url": "https://www.google.com/search?q=site%3Afalstaff.com%2Fen%2Fnews+Munich+restaurant+opening+Falstaff"
+        }
+      ]
     }
   ],
   "candidates": [

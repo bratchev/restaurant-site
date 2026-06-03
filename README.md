@@ -82,8 +82,9 @@ The review workflow is local-first. It does not publish automatically.
 Some high-quality sources block automated fetching. Falstaff is currently treated
 as a manual source.
 
-When the scanner prints a manual source, open that source in a browser and look
-for events in the same lookback window:
+When the scanner prints a manual source, it also writes targeted search URLs to
+`data-work/candidates.json` under `manualSources[].searches`. Open those search
+URLs in a browser and look for events in the same lookback window:
 
 - New opening
 - Michelin star or promotion
@@ -92,8 +93,23 @@ for events in the same lookback window:
 - Pop-up becoming permanent
 - Expansion or larger location
 
-For each useful event, add a candidate to `data-work/approved-candidates.json`
-using this shape:
+For each useful event, add a candidate with:
+
+```bash
+python3 tools/make_manual_candidate.py \
+  --city Munich \
+  --name "Restaurant Name" \
+  --neighborhood "Neighborhood" \
+  --event-type "New opening" \
+  --url "https://www.falstaff.com/en/example" \
+  --summary "Short original summary based on the source." \
+  --why "Short editorial note explaining why this is upward momentum."
+```
+
+The helper appends to `data-work/approved-candidates.json`. You can override
+scores with `--momentum`, `--discovery`, or `--confidence` when needed.
+
+The generated candidate uses this shape:
 
 ```json
 {

@@ -34,6 +34,12 @@
       "name": "Falstaff",
       "url": "https://www.falstaff.com/en",
       "scanMode": "manual",
+      "searchQueries": [
+        "site:falstaff.com/en/news Vienna restaurant opening Falstaff",
+        "site:falstaff.com/en/news Vienna Michelin restaurant Falstaff",
+        "site:falstaff.com/en/news Vienna \"new restaurant\" Falstaff",
+        "site:falstaff.com/en/news Vienna \"Opening of the Year\" restaurant"
+      ],
       "confidence": 4,
       "defaultDiscovery": 3
     },
@@ -49,6 +55,12 @@
       "name": "Falstaff Munich",
       "url": "https://www.falstaff.com/en",
       "scanMode": "manual",
+      "searchQueries": [
+        "site:falstaff.com/en/news Munich restaurant opening Falstaff",
+        "site:falstaff.com/en/news Munich Michelin restaurant Falstaff",
+        "site:falstaff.com/en/news Munich \"new restaurant\" Falstaff",
+        "site:falstaff.com/en/news Munich \"Opening of the Year\" restaurant"
+      ],
       "confidence": 4,
       "defaultDiscovery": 3
     },

@@ -180,6 +180,27 @@ def scan_source(source: dict, scan_date: str, seen_urls: set[str]) -> list[dict]
     return list(unique.values())
 
 
+def search_url(query: str) -> str:
+    return "https://www.google.com/search?q=" + urllib.parse.quote_plus(query)
+
+
+def manual_source_entry(source: dict) -> dict:
+    queries = source.get("searchQueries", [])
+    return {
+        "city": source["city"],
+        "name": source["name"],
+        "url": source["url"],
+        "reason": "Manual review source; automated fetch is skipped.",
+        "searches": [
+            {
+                "query": query,
+                "url": search_url(query),
+            }
+            for query in queries
+        ],
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--weeks", type=int, default=None, help="Lookback window for review metadata.")
@@ -200,13 +221,11 @@ def main() -> int:
     seen_urls = known_urls()
     for source in config["sources"]:
         if source.get("scanMode") == "manual":
-            scan["manualSources"].append({
-                "city": source["city"],
-                "name": source["name"],
-                "url": source["url"],
-                "reason": "Manual review source; automated fetch is skipped.",
-            })
+            manual_entry = manual_source_entry(source)
+            scan["manualSources"].append(manual_entry)
             print(f"manual: skipped {source['name']} ({source['url']})")
+            for search in manual_entry["searches"]:
+                print(f"manual search: {search['query']}")
             continue
         scan["candidates"].extend(scan_source(source, today.isoformat(), seen_urls))
 
