@@ -1,42 +1,39 @@
 {
-  "updated": "2026-06-01",
-  "cities": ["San Francisco", "Vienna", "Munich"],
+  "updated": "2026-06-03",
+  "cities": [
+    "Munich",
+    "San Francisco",
+    "Vienna"
+  ],
   "items": [
     {
-      "name": "Lobalita",
-      "city": "San Francisco",
-      "neighborhood": "Marina",
-      "signal": "New opening",
-      "signalStrength": 4,
-      "signalDate": "2026-05-07",
-      "summary": "Modern Mexican cantina from the team behind Bar Darling, highlighted on Eater SF's May 2026 new-restaurant heatmap.",
-      "whyItMatters": "A new concept from an experienced local team in a high-visibility neighborhood is a useful early momentum signal.",
-      "sourceName": "Eater SF",
-      "sourceUrl": "https://sf.eater.com/maps/best-new-restaurants-san-francisco"
-    },
-    {
-      "name": "Equal Parts",
-      "city": "San Francisco",
-      "neighborhood": "North Beach",
-      "signal": "New opening",
-      "signalStrength": 4,
-      "signalDate": "2026-05-07",
-      "summary": "A large North Beach restaurant led by chef Melissa Perfit, included on Eater SF's current new-restaurant heatmap.",
-      "whyItMatters": "A chef-led opening in a major former restaurant space is the kind of change worth tracking early.",
-      "sourceName": "Eater SF",
-      "sourceUrl": "https://sf.eater.com/maps/best-new-restaurants-san-francisco"
-    },
-    {
-      "name": "The Mantis",
-      "city": "San Francisco",
-      "neighborhood": "Bernal Heights",
-      "signal": "Pop-up to opening",
-      "signalStrength": 3,
-      "signalDate": "2026-05-26",
-      "summary": "Vietnamese pop-up now operating out of Fat Cat, flagged by The Infatuation as a new SF opening with potential.",
-      "whyItMatters": "Pop-ups that graduate into a regular home often carry built-in audience momentum and room to evolve.",
-      "sourceName": "The Infatuation",
-      "sourceUrl": "https://www.theinfatuation.com/san-francisco/guides/new-san-francisco-restaurant-openings"
+      "name": "Tohru in der Schreiberei",
+      "city": "Munich",
+      "neighborhood": "Altstadt",
+      "signal": "Michelin promotion",
+      "signalStrength": 5,
+      "signalDate": "2025-06-18",
+      "summary": "Michelin Germany 2025 promoted Tohru in der Schreiberei from two to three stars, putting Munich at the top of Germany's fine-dining scene.",
+      "whyItMatters": "A promotion to three stars is a rare public acceleration signal, not just legacy praise.",
+      "sourceName": "MICHELIN Guide Germany",
+      "sourceUrl": "https://guide.michelin.com/en/article/michelin-guide-ceremony/the-michelin-guide-germany-2025-is-out",
+      "scores": {
+        "momentum": 5,
+        "discovery": 1,
+        "confidence": 5
+      },
+      "events": [
+        {
+          "type": "Michelin promotion",
+          "date": "2025-06-18",
+          "sourceName": "MICHELIN Guide Germany",
+          "url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/the-michelin-guide-germany-2025-is-out",
+          "momentum": 5,
+          "discovery": 1,
+          "confidence": 5,
+          "note": "Michelin Germany 2025 promoted Tohru in der Schreiberei from two to three stars, putting Munich at the top of Germany's fine-dining scene."
+        }
+      ]
     },
     {
       "name": "Glasswing by Alexandru Simon",
@@ -48,7 +45,24 @@
       "summary": "Listed by Falstaff among Vienna restaurants newly awarded one Michelin star in the 2026 Austria guide.",
       "whyItMatters": "A new star is one of the strongest public signals that a restaurant's reputation is accelerating.",
       "sourceName": "Falstaff",
-      "sourceUrl": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants"
+      "sourceUrl": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants",
+      "scores": {
+        "momentum": 5,
+        "discovery": 2,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New Michelin star",
+          "date": "2026-03-18",
+          "sourceName": "Falstaff",
+          "url": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants",
+          "momentum": 5,
+          "discovery": 2,
+          "confidence": 4,
+          "note": "Listed by Falstaff among Vienna restaurants newly awarded one Michelin star in the 2026 Austria guide."
+        }
+      ]
     },
     {
       "name": "JOLA",
@@ -60,7 +74,24 @@
       "summary": "Named by Falstaff as one of Vienna's new one-star restaurants in the Michelin Guide Austria 2026 selection.",
       "whyItMatters": "A newly starred plant-forward restaurant is a strong upward signal in a city with serious fine-dining competition.",
       "sourceName": "Falstaff",
-      "sourceUrl": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants"
+      "sourceUrl": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants",
+      "scores": {
+        "momentum": 5,
+        "discovery": 2,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New Michelin star",
+          "date": "2026-03-18",
+          "sourceName": "Falstaff",
+          "url": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants",
+          "momentum": 5,
+          "discovery": 2,
+          "confidence": 4,
+          "note": "Named by Falstaff as one of Vienna's new one-star restaurants in the Michelin Guide Austria 2026 selection."
+        }
+      ]
     },
     {
       "name": "Opus",
@@ -72,19 +103,24 @@
       "summary": "Included by Falstaff in the list of Vienna restaurants newly awarded one Michelin star for 2026.",
       "whyItMatters": "New Michelin recognition suggests recent improvement or newly visible excellence rather than settled legacy status.",
       "sourceName": "Falstaff",
-      "sourceUrl": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants"
-    },
-    {
-      "name": "Hefenbruder",
-      "city": "Vienna",
-      "neighborhood": "1070 Vienna",
-      "signal": "New opening",
-      "signalStrength": 3,
-      "signalDate": "2026-05-31",
-      "summary": "Vienna Wurstelstand notes the craft beer and pizza spot's move into a larger Zieglergasse location, with opening expected at the end of May.",
-      "whyItMatters": "Expansion into a larger space can be a useful casual-dining momentum signal, especially when local coverage expects immediate interest.",
-      "sourceName": "Vienna Wurstelstand",
-      "sourceUrl": "https://viennawurstelstand.com/location/hefenbrueder-new-in-vienna/"
+      "sourceUrl": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants",
+      "scores": {
+        "momentum": 5,
+        "discovery": 2,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New Michelin star",
+          "date": "2026-03-18",
+          "sourceName": "Falstaff",
+          "url": "https://www.falstaff.com/en/news/michelin-guide-2026-austrias-new-michelin-starred-restaurants",
+          "momentum": 5,
+          "discovery": 2,
+          "confidence": 4,
+          "note": "Included by Falstaff in the list of Vienna restaurants newly awarded one Michelin star for 2026."
+        }
+      ]
     },
     {
       "name": "Fogosch",
@@ -96,19 +132,24 @@
       "summary": "Falstaff reports that Michelin-starred chef Jürgen Wolfsgruber opened a focused fish bistro on Amalienstrasse in May 2026.",
       "whyItMatters": "A new, stripped-down concept from a Michelin-recognized operator, with high-end kitchen and service talent attached, is a strong Munich momentum signal.",
       "sourceName": "Falstaff",
-      "sourceUrl": "https://www.falstaff.com/en/news/new-fish-bistro-for-munich-juergen-wolfsgruber-opens-fogosch"
-    },
-    {
-      "name": "Casele",
-      "city": "Munich",
-      "neighborhood": "Glockenbach",
-      "signal": "New opening",
-      "signalStrength": 3,
-      "signalDate": "2026-05-26",
-      "summary": "Falstaff describes Casele as a new Naples-meets-Munich restaurant in a former butcher shop, led by sommelier Raffaele Colonna.",
-      "whyItMatters": "A distinctive concept, direct product sourcing, and design-led reuse of a neighborhood space make this more interesting than a standard Italian opening.",
-      "sourceName": "Falstaff",
-      "sourceUrl": "https://www.falstaff.com/en/news/munich-meets-naples-the-casele-brings-italian-flair-to-the-glockenbach-district"
+      "sourceUrl": "https://www.falstaff.com/en/news/new-fish-bistro-for-munich-juergen-wolfsgruber-opens-fogosch",
+      "scores": {
+        "momentum": 4,
+        "discovery": 4,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New opening",
+          "date": "2026-05-06",
+          "sourceName": "Falstaff",
+          "url": "https://www.falstaff.com/en/news/new-fish-bistro-for-munich-juergen-wolfsgruber-opens-fogosch",
+          "momentum": 4,
+          "discovery": 4,
+          "confidence": 4,
+          "note": "Falstaff reports that Michelin-starred chef Jürgen Wolfsgruber opened a focused fish bistro on Amalienstrasse in May 2026."
+        }
+      ]
     },
     {
       "name": "Raya",
@@ -120,19 +161,208 @@
       "summary": "tz reports that Raya opened at the Koenigshof with high-end Asian dining, international sushi chefs, strong early reservation demand, and Michelin ambitions.",
       "whyItMatters": "A chef-backed opening with immediate demand and explicit star ambitions is exactly the kind of early upward trajectory worth watching.",
       "sourceName": "tz München",
-      "sourceUrl": "https://www.tz.de/muenchen/stadt/neues-restaurant-in-muenchen-wir-haben-ueber-500-anfragen-94289214.html"
+      "sourceUrl": "https://www.tz.de/muenchen/stadt/neues-restaurant-in-muenchen-wir-haben-ueber-500-anfragen-94289214.html",
+      "scores": {
+        "momentum": 4,
+        "discovery": 4,
+        "confidence": 3
+      },
+      "events": [
+        {
+          "type": "New opening",
+          "date": "2026-05-04",
+          "sourceName": "tz München",
+          "url": "https://www.tz.de/muenchen/stadt/neues-restaurant-in-muenchen-wir-haben-ueber-500-anfragen-94289214.html",
+          "momentum": 4,
+          "discovery": 4,
+          "confidence": 3,
+          "note": "tz reports that Raya opened at the Koenigshof with high-end Asian dining, international sushi chefs, strong early reservation demand, and Michelin ambitions."
+        }
+      ]
     },
     {
-      "name": "Tohru in der Schreiberei",
+      "name": "Equal Parts",
+      "city": "San Francisco",
+      "neighborhood": "North Beach",
+      "signal": "New opening",
+      "signalStrength": 4,
+      "signalDate": "2026-06-02",
+      "summary": "Chef Melissa Perfit leads this new North Beach restaurant and bar in the former Old Spaghetti Factory space, with seafood-inflected California cooking and Mexico City/Tulum inspiration.",
+      "whyItMatters": "A chef-led opening in a major former restaurant space is the kind of change worth tracking early.",
+      "sourceName": "Eater SF Heatmap",
+      "sourceUrl": "https://sf.eater.com/restaurant-news/210191/san-francisco-restaurant-bar-opening-equal-parts-north-beach",
+      "scores": {
+        "momentum": 4,
+        "discovery": 4,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New opening",
+          "date": "2026-05-07",
+          "sourceName": "Eater SF",
+          "url": "https://sf.eater.com/maps/best-new-restaurants-san-francisco",
+          "momentum": 4,
+          "discovery": 4,
+          "confidence": 4,
+          "note": "A large North Beach restaurant led by chef Melissa Perfit, included on Eater SF's current new-restaurant heatmap."
+        },
+        {
+          "type": "New opening",
+          "date": "2026-06-02",
+          "sourceName": "Eater SF Heatmap",
+          "url": "https://sf.eater.com/restaurant-news/210191/san-francisco-restaurant-bar-opening-equal-parts-north-beach",
+          "momentum": 4,
+          "discovery": 4,
+          "confidence": 4,
+          "note": "a new restaurant led by chef Melissa Perfit"
+        }
+      ]
+    },
+    {
+      "name": "Friulian trattoria Polenta",
+      "city": "San Francisco",
+      "neighborhood": "SOMA",
+      "signal": "New opening",
+      "signalStrength": 4,
+      "signalDate": "2026-06-02",
+      "summary": "Friulian trattoria Polenta has quietly opened its doors on Fillmore Street, highlighting food and wine from that Northern Italian region, Tablehopper reports. Diners can expect dishes such as cevapcici, a lamb-beef sausage; braised beef gulash served with crispy polenta; and busara, spaghetti with shrimp-tomato sauce. 803 Fillmore Street, San Francisco",
+      "whyItMatters": "",
+      "sourceName": "Eater SF Heatmap",
+      "sourceUrl": "https://sf.eater.com/openings",
+      "scores": {
+        "momentum": 4,
+        "discovery": 4,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New opening",
+          "date": "2026-06-02",
+          "sourceName": "Eater SF Heatmap",
+          "url": "https://sf.eater.com/openings",
+          "momentum": 4,
+          "discovery": 4,
+          "confidence": 4,
+          "note": "Openings"
+        }
+      ]
+    },
+    {
+      "name": "Lobalita",
+      "city": "San Francisco",
+      "neighborhood": "Marina",
+      "signal": "New opening",
+      "signalStrength": 4,
+      "signalDate": "2026-05-07",
+      "summary": "Modern Mexican cantina from the team behind Bar Darling, highlighted on Eater SF's May 2026 new-restaurant heatmap.",
+      "whyItMatters": "A new concept from an experienced local team in a high-visibility neighborhood is a useful early momentum signal.",
+      "sourceName": "Eater SF",
+      "sourceUrl": "https://sf.eater.com/maps/best-new-restaurants-san-francisco",
+      "scores": {
+        "momentum": 4,
+        "discovery": 4,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New opening",
+          "date": "2026-05-07",
+          "sourceName": "Eater SF",
+          "url": "https://sf.eater.com/maps/best-new-restaurants-san-francisco",
+          "momentum": 4,
+          "discovery": 4,
+          "confidence": 4,
+          "note": "Modern Mexican cantina from the team behind Bar Darling, highlighted on Eater SF's May 2026 new-restaurant heatmap."
+        }
+      ]
+    },
+    {
+      "name": "Casele",
       "city": "Munich",
-      "neighborhood": "Altstadt",
-      "signal": "Michelin promotion",
-      "signalStrength": 5,
-      "signalDate": "2025-06-18",
-      "summary": "Michelin Germany 2025 promoted Tohru in der Schreiberei from two to three stars, putting Munich at the top of Germany's fine-dining scene.",
-      "whyItMatters": "A promotion to three stars is a rare public acceleration signal, not just legacy praise.",
-      "sourceName": "MICHELIN Guide Germany",
-      "sourceUrl": "https://guide.michelin.com/en/article/michelin-guide-ceremony/the-michelin-guide-germany-2025-is-out"
+      "neighborhood": "Glockenbach",
+      "signal": "New opening",
+      "signalStrength": 3,
+      "signalDate": "2026-05-26",
+      "summary": "Falstaff describes Casele as a new Naples-meets-Munich restaurant in a former butcher shop, led by sommelier Raffaele Colonna.",
+      "whyItMatters": "A distinctive concept, direct product sourcing, and design-led reuse of a neighborhood space make this more interesting than a standard Italian opening.",
+      "sourceName": "Falstaff",
+      "sourceUrl": "https://www.falstaff.com/en/news/munich-meets-naples-the-casele-brings-italian-flair-to-the-glockenbach-district",
+      "scores": {
+        "momentum": 3,
+        "discovery": 4,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "New opening",
+          "date": "2026-05-26",
+          "sourceName": "Falstaff",
+          "url": "https://www.falstaff.com/en/news/munich-meets-naples-the-casele-brings-italian-flair-to-the-glockenbach-district",
+          "momentum": 3,
+          "discovery": 4,
+          "confidence": 4,
+          "note": "Falstaff describes Casele as a new Naples-meets-Munich restaurant in a former butcher shop, led by sommelier Raffaele Colonna."
+        }
+      ]
+    },
+    {
+      "name": "The Mantis",
+      "city": "San Francisco",
+      "neighborhood": "Bernal Heights",
+      "signal": "Pop-up to opening",
+      "signalStrength": 3,
+      "signalDate": "2026-05-26",
+      "summary": "Vietnamese pop-up now operating out of Fat Cat, flagged by The Infatuation as a new SF opening with potential.",
+      "whyItMatters": "Pop-ups that graduate into a regular home often carry built-in audience momentum and room to evolve.",
+      "sourceName": "The Infatuation",
+      "sourceUrl": "https://www.theinfatuation.com/san-francisco/guides/new-san-francisco-restaurant-openings",
+      "scores": {
+        "momentum": 3,
+        "discovery": 5,
+        "confidence": 4
+      },
+      "events": [
+        {
+          "type": "Pop-up to opening",
+          "date": "2026-05-26",
+          "sourceName": "The Infatuation",
+          "url": "https://www.theinfatuation.com/san-francisco/guides/new-san-francisco-restaurant-openings",
+          "momentum": 3,
+          "discovery": 5,
+          "confidence": 4,
+          "note": "Vietnamese pop-up now operating out of Fat Cat, flagged by The Infatuation as a new SF opening with potential."
+        }
+      ]
+    },
+    {
+      "name": "Hefenbruder",
+      "city": "Vienna",
+      "neighborhood": "1070 Vienna",
+      "signal": "New opening",
+      "signalStrength": 3,
+      "signalDate": "2026-05-31",
+      "summary": "Vienna Wurstelstand notes the craft beer and pizza spot's move into a larger Zieglergasse location, with opening expected at the end of May.",
+      "whyItMatters": "Expansion into a larger space can be a useful casual-dining momentum signal, especially when local coverage expects immediate interest.",
+      "sourceName": "Vienna Wurstelstand",
+      "sourceUrl": "https://viennawurstelstand.com/location/hefenbrueder-new-in-vienna/",
+      "scores": {
+        "momentum": 3,
+        "discovery": 4,
+        "confidence": 3
+      },
+      "events": [
+        {
+          "type": "New opening",
+          "date": "2026-05-31",
+          "sourceName": "Vienna Wurstelstand",
+          "url": "https://viennawurstelstand.com/location/hefenbrueder-new-in-vienna/",
+          "momentum": 3,
+          "discovery": 4,
+          "confidence": 3,
+          "note": "Vienna Wurstelstand notes the craft beer and pizza spot's move into a larger Zieglergasse location, with opening expected at the end of May."
+        }
+      ]
     }
   ],
   "sources": [
