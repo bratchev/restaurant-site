@@ -77,6 +77,52 @@ The review workflow is local-first. It does not publish automatically.
 
 7. Preview `public/restaurants.html`, then commit, push, and upload reviewed files.
 
+### Manual sources
+
+Some high-quality sources block automated fetching. Falstaff is currently treated
+as a manual source.
+
+When the scanner prints a manual source, open that source in a browser and look
+for events in the same lookback window:
+
+- New opening
+- Michelin star or promotion
+- Bib Gourmand or Green Star
+- Chef-led move
+- Pop-up becoming permanent
+- Expansion or larger location
+
+For each useful event, add a candidate to `data-work/approved-candidates.json`
+using this shape:
+
+```json
+{
+  "id": "munich-falstaff-example",
+  "status": "approved",
+  "name": "Restaurant Name",
+  "city": "Munich",
+  "neighborhood": "Neighborhood",
+  "summary": "Short original summary based on the source.",
+  "whyItMatters": "Short editorial note explaining why this is upward momentum.",
+  "event": {
+    "type": "New opening",
+    "date": "2026-06-02",
+    "sourceName": "Falstaff",
+    "url": "https://www.falstaff.com/en/example",
+    "momentum": 4,
+    "discovery": 3,
+    "confidence": 4,
+    "note": "Short note about the source event."
+  }
+}
+```
+
+Scoring guide:
+
+- `momentum`: 5 for Michelin promotion/new star, 4 for serious chef-led opening, 3 for interesting local opening.
+- `discovery`: 5 for pop-up/soft opening/under-the-radar, 3 for known publication coverage, 1-2 for already-famous restaurants.
+- `confidence`: 5 for Michelin, 4 for Falstaff/Eater/Infatuation, 3 for local press, 1-2 for weak aggregators.
+
 ## Local preview
 
 For a simple preview, open `public/index.html` in a browser. If browser security blocks loading `public/data/restaurants.json`, run a local server from the repo root:

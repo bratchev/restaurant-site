@@ -2,6 +2,14 @@
   "generatedAt": "2026-06-02T00:00:00+00:00",
   "lookbackWeeks": 12,
   "lookbackStart": "2026-03-10",
+  "manualSources": [
+    {
+      "city": "Munich",
+      "name": "Falstaff Munich",
+      "url": "https://www.falstaff.com/en",
+      "reason": "Manual review source; automated fetch is skipped."
+    }
+  ],
   "candidates": [
     {
       "id": "example-munich-new-opening",

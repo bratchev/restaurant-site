@@ -33,6 +33,7 @@
       "city": "Vienna",
       "name": "Falstaff",
       "url": "https://www.falstaff.com/en",
+      "scanMode": "manual",
       "confidence": 4,
       "defaultDiscovery": 3
     },
@@ -47,6 +48,7 @@
       "city": "Munich",
       "name": "Falstaff Munich",
       "url": "https://www.falstaff.com/en",
+      "scanMode": "manual",
       "confidence": 4,
       "defaultDiscovery": 3
     },

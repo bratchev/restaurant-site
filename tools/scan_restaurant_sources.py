@@ -193,11 +193,21 @@ def main() -> int:
         "generatedAt": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "lookbackWeeks": weeks,
         "lookbackStart": (today - dt.timedelta(weeks=weeks)).isoformat(),
+        "manualSources": [],
         "candidates": [],
     }
 
     seen_urls = known_urls()
     for source in config["sources"]:
+        if source.get("scanMode") == "manual":
+            scan["manualSources"].append({
+                "city": source["city"],
+                "name": source["name"],
+                "url": source["url"],
+                "reason": "Manual review source; automated fetch is skipped.",
+            })
+            print(f"manual: skipped {source['name']} ({source['url']})")
+            continue
         scan["candidates"].extend(scan_source(source, today.isoformat(), seen_urls))
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
