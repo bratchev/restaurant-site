@@ -1,0 +1,68 @@
+{
+  "defaultWeeks": 12,
+  "sources": [
+    {
+      "city": "San Francisco",
+      "name": "Eater SF Heatmap",
+      "url": "https://sf.eater.com/maps/best-new-restaurants-san-francisco",
+      "confidence": 4,
+      "defaultDiscovery": 4
+    },
+    {
+      "city": "San Francisco",
+      "name": "The Infatuation SF New Openings",
+      "url": "https://www.theinfatuation.com/san-francisco/guides/new-san-francisco-restaurant-openings",
+      "confidence": 4,
+      "defaultDiscovery": 4
+    },
+    {
+      "city": "San Francisco",
+      "name": "MICHELIN Guide California",
+      "url": "https://guide.michelin.com/us/en/california/restaurants",
+      "confidence": 5,
+      "defaultDiscovery": 2
+    },
+    {
+      "city": "Vienna",
+      "name": "MICHELIN Guide Austria",
+      "url": "https://guide.michelin.com/at/en/restaurants",
+      "confidence": 5,
+      "defaultDiscovery": 2
+    },
+    {
+      "city": "Vienna",
+      "name": "Falstaff",
+      "url": "https://www.falstaff.com/en",
+      "confidence": 4,
+      "defaultDiscovery": 3
+    },
+    {
+      "city": "Vienna",
+      "name": "Vienna Wurstelstand",
+      "url": "https://viennawurstelstand.com",
+      "confidence": 3,
+      "defaultDiscovery": 4
+    },
+    {
+      "city": "Munich",
+      "name": "Falstaff Munich",
+      "url": "https://www.falstaff.com/en",
+      "confidence": 4,
+      "defaultDiscovery": 3
+    },
+    {
+      "city": "Munich",
+      "name": "MICHELIN Guide Germany",
+      "url": "https://guide.michelin.com/en/restaurants",
+      "confidence": 5,
+      "defaultDiscovery": 2
+    },
+    {
+      "city": "Munich",
+      "name": "in-muenchen and local press",
+      "url": "https://www.in-muenchen.de/gastro",
+      "confidence": 3,
+      "defaultDiscovery": 4
+    }
+  ]
+}

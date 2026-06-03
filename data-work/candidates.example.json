@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-06-02T00:00:00+00:00",
+  "lookbackWeeks": 12,
+  "lookbackStart": "2026-03-10",
+  "candidates": [
+    {
+      "id": "example-munich-new-opening",
+      "status": "pending",
+      "name": "Example Restaurant",
+      "city": "Munich",
+      "neighborhood": "Example neighborhood",
+      "summary": "A short sourced summary written in original words.",
+      "whyItMatters": "A short editorial note explaining the momentum signal.",
+      "event": {
+        "type": "New opening",
+        "date": "2026-06-02",
+        "sourceName": "Example Source",
+        "url": "https://example.com/",
+        "momentum": 4,
+        "discovery": 4,
+        "confidence": 3,
+        "note": "The source event that caused this candidate to be reviewed."
+      }
+    }
+  ]
+}

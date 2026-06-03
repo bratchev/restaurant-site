@@ -33,17 +33,41 @@ function renderFilterOptions(items) {
   renderOptions(signalFilter, signals);
 }
 
-function renderStrength(value) {
+function renderStrength(label, value) {
   const max = 5;
   const score = Number(value) || 0;
   const wrapper = document.createElement("div");
-  wrapper.className = "momentum-score";
-  wrapper.setAttribute("aria-label", `Momentum signal strength ${score} out of ${max}`);
+  wrapper.className = "score-row";
+  wrapper.setAttribute("aria-label", `${label} score ${score} out of ${max}`);
+
+  const text = document.createElement("span");
+  text.className = "score-label";
+  text.textContent = label;
+
+  const marks = document.createElement("span");
+  marks.className = "momentum-score";
 
   for (let index = 1; index <= max; index += 1) {
     const mark = document.createElement("span");
     mark.className = index <= score ? "is-active" : "";
-    wrapper.append(mark);
+    marks.append(mark);
+  }
+
+  wrapper.append(text, marks);
+  return wrapper;
+}
+
+function renderScores(item) {
+  const scores = item.scores || { momentum: item.signalStrength };
+  const wrapper = document.createElement("div");
+  wrapper.className = "score-stack";
+  wrapper.append(renderStrength("Momentum", scores.momentum || item.signalStrength));
+
+  if (scores.discovery || scores.confidence) {
+    wrapper.append(
+      renderStrength("Discovery", scores.discovery),
+      renderStrength("Confidence", scores.confidence)
+    );
   }
 
   return wrapper;
@@ -86,7 +110,7 @@ function renderItems() {
     reason.className = "why-it-matters";
     reason.textContent = item.whyItMatters;
 
-    const strength = renderStrength(item.signalStrength);
+    const strength = renderScores(item);
 
     const source = document.createElement("a");
     source.className = "source-link";

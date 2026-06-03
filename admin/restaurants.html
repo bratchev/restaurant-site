@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Candidate Review</title>
+    <link rel="stylesheet" href="review.css">
+  </head>
+  <body>
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">Local admin</p>
+        <h1>Restaurant Candidate Review</h1>
+      </div>
+      <button id="download-approved" type="button">Download approved</button>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="Review filters">
+        <label>
+          City
+          <select id="city-filter">
+            <option value="all">All cities</option>
+          </select>
+        </label>
+        <label>
+          Status
+          <select id="status-filter">
+            <option value="all">All statuses</option>
+            <option value="pending">Pending</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+          </select>
+        </label>
+      </section>
+
+      <section id="candidate-list" class="candidate-list" aria-live="polite">
+        <p>Loading candidates...</p>
+      </section>
+    </main>
+
+    <script src="review.js"></script>
+  </body>
+</html>

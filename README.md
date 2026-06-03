@@ -45,6 +45,38 @@ Later automation options:
 - Run that script on a schedule from your computer, GitHub Actions, or pair.com cron if available.
 - Keep source links visible so readers can verify the information.
 
+## Restaurant review workflow
+
+The review workflow is local-first. It does not publish automatically.
+
+1. Scan source pages:
+
+   ```bash
+   python3 tools/scan_restaurant_sources.py --weeks 12
+   ```
+
+2. Start a local server from the repo root:
+
+   ```bash
+   python3 -m http.server 8080
+   ```
+
+3. Open the local review page:
+
+   ```text
+   http://localhost:8080/admin/restaurants.html
+   ```
+
+4. Approve, reject, or edit candidates, then download `approved-candidates.json`.
+5. Move the downloaded file to `data-work/approved-candidates.json`.
+6. Merge approved candidates into the public data file:
+
+   ```bash
+   python3 tools/merge_restaurant_candidates.py
+   ```
+
+7. Preview `public/restaurants.html`, then commit, push, and upload reviewed files.
+
 ## Local preview
 
 For a simple preview, open `public/index.html` in a browser. If browser security blocks loading `public/data/restaurants.json`, run a local server from the repo root:

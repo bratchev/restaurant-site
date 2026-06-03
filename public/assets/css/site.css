@@ -354,10 +354,28 @@ h2 {
   color: var(--ink) !important;
 }
 
+.score-stack {
+  display: grid;
+  gap: 7px;
+  margin-top: auto;
+}
+
+.score-row {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.score-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .momentum-score {
   display: flex;
   gap: 5px;
-  margin-top: auto;
 }
 
 .momentum-score span {
