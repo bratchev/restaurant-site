@@ -429,6 +429,63 @@ h2 {
   text-transform: uppercase;
 }
 
+.archive-page main {
+  width: min(1180px, calc(100% - 36px));
+}
+
+.archive-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0 0 64px;
+}
+
+.archive-list--compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.archive-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 210px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.archive-list--compact .archive-card {
+  min-height: 150px;
+}
+
+.archive-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.archive-card span {
+  color: var(--warm);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.archive-card h2 {
+  margin: 0;
+  font-size: 1.24rem;
+  line-height: 1.18;
+}
+
+.archive-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
 @media (max-width: 640px) {
   .site-header {
     align-items: flex-start;
@@ -479,6 +536,11 @@ h2 {
   .source-grid {
     grid-template-columns: 1fr;
   }
+
+  .archive-list,
+  .archive-list--compact {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -496,6 +558,11 @@ h2 {
   }
 
   .source-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .archive-list,
+  .archive-list--compact {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
