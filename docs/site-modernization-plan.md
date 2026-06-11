@@ -23,8 +23,8 @@ python3 tools/public_manifest.py check
 Expected behavior during cleanup:
 
 - Missing files are treated as blockers unless the deletion is intentional.
-- Changed files under `public/ourphotos/`, `public/applets/`, and
-  `public/index_files/` need extra review.
+- Changed files under `public/ourphotos/` and `public/index_files/` need extra
+  review.
 - New files are allowed; the checker reports them as extra but does not fail on
   extras.
 - Regenerate the manifest only after intentional, reviewed changes:
@@ -41,7 +41,6 @@ Do not rewrite, rename, or bulk-format these by default:
 - `public/ourphotos/**/thumbnails/`
 - generated gallery files such as `target*.html`, `caption.html`, and
   `imageset.html`
-- `public/applets/`
 - original homepage media under `public/index_files/`
 
 ## First Modernization Targets

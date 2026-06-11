@@ -1,19 +1,18 @@
 {
   "schema": 1,
   "root": "public",
-  "generatedAt": "2026-06-11T18:00:35+00:00",
+  "generatedAt": "2026-06-11T18:09:13+00:00",
   "summary": {
-    "files": 4545,
-    "bytes": 96684468,
+    "files": 4542,
+    "bytes": 96082593,
     "byExtension": {
       "[none]": 1,
       "css": 11,
       "gif": 11,
       "hist": 1,
       "htm": 1,
-      "html": 1772,
+      "html": 1771,
       "ini": 20,
-      "jar": 2,
       "jpg": 1952,
       "js": 1,
       "json": 1,
@@ -7654,21 +7653,6 @@
       "sha256": "71c7de3a3b6033c84e6d3d5c884da4df8221968d506146a25c3ee995f2c02474"
     },
     {
-      "path": "public/applets/names/NameSurfer.jar",
-      "size": 124155,
-      "sha256": "350b8863c9ead0a09e85eb47d350d7b0708b18492318bfff08e89aa2ad3fd030"
-    },
-    {
-      "path": "public/applets/names/acm.jar",
-      "size": 477185,
-      "sha256": "44902d93bc4bb23b7c5f6784b71c931de3143937a2903b4f147ea2aa190743b6"
-    },
-    {
-      "path": "public/applets/names/namesurfer.html",
-      "size": 270,
-      "sha256": "5456e4f5fdd90e45874b4cc78a5091b466ef5ec0354ace8e9af2fbc60aa3f6bf"
-    },
-    {
       "path": "public/assets/css/site.css",
       "size": 9191,
       "sha256": "1b38a0260440bc9419dd2f871a8a32bc04ca7cc230c4efc38123aa988baaade9"
@@ -7690,8 +7674,8 @@
     },
     {
       "path": "public/index.html",
-      "size": 3512,
-      "sha256": "4d17e28620b27bb1739eb907730108ece076dd897d0bb9e03500a7f0d2dbc8fa"
+      "size": 3247,
+      "sha256": "ffc72435cfc65a8d3d24f75e72672004319e5de61d3ba218d7bd3e08300a899f"
     },
     {
       "path": "public/index_files/filelist.xml",
