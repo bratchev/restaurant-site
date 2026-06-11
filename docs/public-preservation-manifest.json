@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "root": "public",
-  "generatedAt": "2026-06-11T18:47:13+00:00",
+  "generatedAt": "2026-06-11T19:08:20+00:00",
   "summary": {
     "files": 4543,
-    "bytes": 96092710,
+    "bytes": 96092400,
     "byExtension": {
       "[none]": 1,
       "css": 11,
@@ -21880,8 +21880,8 @@
     },
     {
       "path": "public/ourphotos/index.html",
-      "size": 2571,
-      "sha256": "b7011bb9c10cf3148911ea6548fc2d46ea3914ea39c98828323f95090c12c996"
+      "size": 2261,
+      "sha256": "608ca6a46c535a3fffa47e2296beb5e52e0a8f79b15abd18c6a228bb35fc62bd"
     },
     {
       "path": "public/ourphotos/pictures_files/filelist.xml",
