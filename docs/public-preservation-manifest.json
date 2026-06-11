@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "root": "public",
-  "generatedAt": "2026-06-11T18:09:13+00:00",
+  "generatedAt": "2026-06-11T18:47:13+00:00",
   "summary": {
-    "files": 4542,
-    "bytes": 96082593,
+    "files": 4543,
+    "bytes": 96092710,
     "byExtension": {
       "[none]": 1,
       "css": 11,
@@ -16,6 +16,7 @@
       "jpg": 1952,
       "js": 1,
       "json": 1,
+      "pdf": 1,
       "png": 769,
       "txt": 1,
       "xml": 2
@@ -7654,8 +7655,13 @@
     },
     {
       "path": "public/assets/css/site.css",
-      "size": 9191,
-      "sha256": "1b38a0260440bc9419dd2f871a8a32bc04ca7cc230c4efc38123aa988baaade9"
+      "size": 10738,
+      "sha256": "d1337c187c565f728b0e8b1f750a0a95ad4ef3314d3e59525650c45a36a76fe8"
+    },
+    {
+      "path": "public/assets/docs/boris-ratchev-resume-2026.pdf",
+      "size": 4024,
+      "sha256": "17da32036b52c1c5cf7d004c75172ee0a9ad25156d372d174bb683d22aa22663"
     },
     {
       "path": "public/assets/js/restaurants.js",
@@ -22724,8 +22730,8 @@
     },
     {
       "path": "public/professional.html",
-      "size": 2007,
-      "sha256": "3a97299984b047d35a5f5db4d4bf88c9100e7bceef9e8a6a0ead531c68570ae3"
+      "size": 6553,
+      "sha256": "1d3178798b2cbf9ab91670a672fb6e94991b85985820d0bea41bd1ecaeafe32e"
     },
     {
       "path": "public/restaurants.html",
